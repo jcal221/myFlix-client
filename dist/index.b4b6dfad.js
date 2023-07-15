@@ -2942,6 +2942,7 @@ $parcel$ReactRefreshHelpers$98a3.prelude(module);
 
 try {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _mainView = require("./components/main-view/main-view");
 var _client = require("react-dom/client");
 // Import statement to indicate that you need to bundle `./index.scss`
 var _indexScss = require("./index.scss");
@@ -2953,12 +2954,12 @@ const MyFlixApplication = ()=>{
             children: "Good morning"
         }, void 0, false, {
             fileName: "src/index.jsx",
-            lineNumber: 10,
+            lineNumber: 11,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/index.jsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
@@ -2969,7 +2970,7 @@ const root = (0, _client.createRoot)(container);
 // Tells React to render your app in the root DOM element
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MyFlixApplication, {}, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 20,
+    lineNumber: 21,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -2980,7 +2981,7 @@ $RefreshReg$(_c, "MyFlixApplication");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./index.scss":"lJZlQ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fa4ej"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./index.scss":"lJZlQ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fa4ej","./components/main-view/main-view":"4gflv"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27303,6 +27304,106 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"d7899ff6b6943bbd":"kk8bd"}]},["3SWJ1","3IrPy","d8Dch"], "d8Dch", "parcelRequireaec4")
+},{"d7899ff6b6943bbd":"kk8bd"}],"4gflv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f7a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f7a6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MainView", ()=>MainView);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const MainView = ()=>{
+    _s();
+    const [books, setBooks] = (0, _react.useState)([
+        {
+            id: 1,
+            title: "Eloquent JavaScript"
+        },
+        {
+            id: 2,
+            title: "Mastering JavaScript Functional Programming"
+        },
+        {
+            id: 3,
+            title: "JavaScript: The Good Parts"
+        },
+        {
+            id: 4,
+            title: "JavaScript: The Definitive Guide"
+        },
+        {
+            id: 5,
+            title: "The Road to React"
+        }
+    ]);
+    if (books.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "The list is empty!"
+    }, void 0, false, {
+        fileName: "src/components/main-view/main-view.jsx",
+        lineNumber: 13,
+        columnNumber: 12
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: books.map((book)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: book.title
+            }, void 0, false, {
+                fileName: "src/components/main-view/main-view.jsx",
+                lineNumber: 19,
+                columnNumber: 16
+            }, undefined);
+        })
+    }, void 0, false, {
+        fileName: "src/components/main-view/main-view.jsx",
+        lineNumber: 17,
+        columnNumber: 5
+    }, undefined);
+};
+_s(MainView, "17Ip2hQeOLd7vLF2ntlNt9FW26Y=");
+_c = MainView;
+var _c;
+$RefreshReg$(_c, "MainView");
+
+  $parcel$ReactRefreshHelpers$f7a6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"bdPDJ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"fa4ej","react":"21dqq"}],"bdPDJ":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["3SWJ1","3IrPy","d8Dch"], "d8Dch", "parcelRequireaec4")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
